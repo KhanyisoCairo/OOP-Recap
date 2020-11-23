@@ -1,0 +1,8 @@
+@startuml
+interface B {
++methodA()
++methodB()
+}
+class A
+ A --|>  B
+@enduml

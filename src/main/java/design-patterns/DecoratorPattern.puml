@@ -1,0 +1,19 @@
+@startuml
+class TwentyPercentDownShoppingCartItem{
+ -shoppingCartItem : IShoppingCartItem
+
+     +getQyt() :int
+
+    +getPrice() : double
+
+    +getTotalPrice() : double
+}
++interface IShoppingCartItem {
+    +getProductName(): String
+    +getQyt() : int
+    +getPrice() : double
+    +getTotalPrice() : double
+}
+TwentyPercentDownShoppingCartItem --|> IShoppingCartItem
+
+@enduml
